@@ -22,7 +22,6 @@ def forbid() -> str:
         - raise a 403 error
     """
     abort(403, description="Forbidden")
-
     
 @app_views.route('/status', methods=['GET'], strict_slashes=False)
 def status() -> str:
